@@ -14,8 +14,8 @@
 }
 
 body {
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     overflow: hidden;
     background-color: var(--Pale-blue);
     display: flex;
@@ -25,8 +25,8 @@ body {
 }
 
 main {
-    width: 450px;
-    height: 700px;
+    width: 31.25%;
+    height: 77.8%;
 }
 
 .card {
