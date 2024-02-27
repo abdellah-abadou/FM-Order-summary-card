@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+body {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+}
+
+main {
+    width: 450px;
+    height: 700px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 100px -5px rgba(0, 0, 0, 0.151);
+}
+
+.main-image img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--Dark-blue);
+    padding: 40px 0px 10px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    font-size: 1.1em;
+    padding: 10px 0px 40px;
+}
+
+.card div div {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;   
+    width: 90%;
+    margin: 20px 0px 50px;
+}
+
+.card div div figure {
+    display: flex;   
+}
+
+.card div div figcaption {
+    color: var(--Dark-blue);
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+.card div div figcaption span {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.card div div a {
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.card div div a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.button-one { 
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    background-color: var(--Bright-blue); 
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-one:hover {
+    opacity: 0.8;
+}
+
+.button-two { 
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 40px;
+} 
+
+.button-two:hover {
+    color: var(--Dark-blue);
+}
